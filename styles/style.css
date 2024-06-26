@@ -5,3 +5,15 @@
     text-decoration: none;
 }
 
+:root {
+    --bg-color: #F3F5FC;
+    --bg-color-secundary: #FFFFFF;
+
+    --text-color-blue: #0A3871;
+    --text-color-gray-400: #495057;
+    --text-color-gray-500: #343A40;
+
+    --dark-blue-300: #0A3871;
+    --bt-secundary-hover: #D8DFE8;
+}
+  
