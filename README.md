@@ -17,8 +17,6 @@ Desafio do curso ONE, parceria Alura e Oracle.
 
 ## O desafio proposto
 
-Boas vindas ao primeiro desafio!
-
 Durante estas duas semanas, vamos trabalhar em uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
 
 As "chaves" de criptografia que utilizaremos são:
@@ -59,5 +57,3 @@ No Pausado estarão os elementos que você começou a desenvolver, mas precisou 
 Por fim, a coluna Concluído terá os elementos já concluídos.
 
 O Trello é uma ferramenta de uso individual para você controlar o andamento das suas atividades, mas ela não será avaliada.
-
-Bom projeto!
