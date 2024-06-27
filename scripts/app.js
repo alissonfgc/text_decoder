@@ -34,7 +34,9 @@ function decrypt() {
     if (checkValidString(inputText)) {
         outputText = inputText.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
         document.querySelector('#output-text').value = outputText;
+        showResult();
     } else {
+        showImage();
         const placeHolder = document.querySelector('#input-text');
         placeHolder.value = '';
         placeHolder.placeholder = 'Apenas letras minúsculas e sem acento.';
