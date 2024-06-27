@@ -79,17 +79,34 @@
 
     #text-field {
         margin-top: 4rem;
-
-        p {
+        textarea {
+            font-size: 2rem;
+            color: var(--text-color);
+            border: none;
+            outline:none;
+            resize: none;
+            overflow:auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-color: transparent;
+        }
+        textarea::placeholder {
             font-size: 2rem;
             color: var(--text-color);
         }
     }
 
     #secondary-text-field {
-        p {
+        textarea {
             font-size: 1.5rem;
             color: var(--text-color-gray-400);
+            border: none;
+            outline:none;
+            resize: none;
+            overflow:auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-color: transparent;
         }
     }
 

@@ -15,9 +15,7 @@
         </nav>
         <div class="card" id="main-content">
             <div class="fields" id="text-field">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit corporis quis ducimus, porro beatae
-                    harum architecto, ipsam reiciendis quas tenetur, autem alias odio! Iure quos, sapiente fugiat ullam
-                    nisi quo!</p>
+                <textarea name="input-text" id="input-text" placeholder="Digite seu texto"></textarea>
             </div>
             <div class="fields">
                 <div id="alert-field">
@@ -25,28 +23,26 @@
                     <p>Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="buttons-field" id="secondary">
-                    <button class="btn primary-btn">Criptografar</button>
-                    <button class="btn secondary-btn">Descriptografar</button>
+                    <button onclick="encrypt()" class="btn primary-btn">Criptografar</button>
+                    <button onclick="decrypt()" class="btn secondary-btn">Descriptografar</button>
                 </div>
             </div>
         </div>
         <div class="card" id="secondary-content">
             <div class="fields" id="secondary-text-field">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis tempore
-                    voluptatem obcaecati saepe, velit odio doloribus mollitia suscipit numquam quisquam. Voluptatem
-                    animi magnam quo eum vitae vero perferendis repudiandae?
-                </p>
+                <textarea name="output-text" id="output-text" readonly></textarea>
             </div>
-            <div class="fields" id="empty-text-alert" style="display:none">
+            <div class="fields" id="empty-text-alert">
                 <img src="./img/image-empty-field.svg" alt="">
                 <b>Nenhuma mensagem encontrada</b>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <div class="buttons-field" id="secondary">
-                <button class="btn secondary-btn">Copiar</button>
+            <div class="buttons-field" id="secondary-btn-div">
+                <button id="copy-btn" onclick="copyText()"  class="btn secondary-btn">Copiar</button>
             </div>
         </div>
     </section>
+    <script src="./scripts/app.js" defer></script>
 </body>
 
 </html>
