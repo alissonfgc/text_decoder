@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Decodificador de texto</title>
 </head>
+
 <body>
-    
+    <section id="content">
+        <nav id="navbar">
+            <img id="img-logo" src="./img/logo.png" alt="">
+        </nav>
+        <div class="card" id="main-content">
+            <div class="fields" id="text-field">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit corporis quis ducimus, porro beatae
+                    harum architecto, ipsam reiciendis quas tenetur, autem alias odio! Iure quos, sapiente fugiat ullam
+                    nisi quo!</p>
+            </div>
+            <div class="fields">
+                <div id="alert-field">
+                    <img src="./img/alert-icon.svg">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons-field" id="secondary">
+                    <button class="btn primary-btn">Criptografar</button>
+                    <button class="btn secondary-btn">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="secondary-content">
+            <div class="fields" id="secondary-text-field">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis tempore
+                    voluptatem obcaecati saepe, velit odio doloribus mollitia suscipit numquam quisquam. Voluptatem
+                    animi magnam quo eum vitae vero perferendis repudiandae?
+                </p>
+            </div>
+            <div class="fields" id="empty-text-alert" style="display:none">
+                <img src="./img/image-empty-field.svg" alt="">
+                <b>Nenhuma mensagem encontrada</b>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="buttons-field" id="secondary">
+                <button class="btn secondary-btn">Copiar</button>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

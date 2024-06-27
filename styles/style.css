@@ -1,19 +1,190 @@
+:root {
+    --main-bg-color: #F3F5FC;
+    --secondary-bg-color: #FFFFFF;
+
+    --text-color: #0A3871;
+    --text-color-light: #FFFFFF;
+    --text-color-gray-400: #495057;
+    --text-color-gray-500: #343A40;
+
+    --width-desktop: 1440px;
+    --width-tablet: 768px;
+    --width-mobile: 375px;
+
+    --btn-border-radius: 1.5rem;
+    --card-border-radius: 2rem;
+
+    --btn-primary: #0A3871;
+    --btn-primary-hover: #072B61;
+
+    --btn-secondary-border: #0A3871;
+    --btn-secondary-hover: #EFF1FA;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
 }
 
-:root {
-    --bg-color: #F3F5FC;
-    --bg-color-secundary: #FFFFFF;
+#content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+    gap: 5rem;
 
-    --text-color-blue: #0A3871;
-    --text-color-gray-400: #495057;
-    --text-color-gray-500: #343A40;
+    nav {
+        /*  teste === para haver portabilidade as configuracoes devem ser alteradas*/
+        flex: 1 1 0;
+        max-width: 120px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
 
-    --dark-blue-300: #0A3871;
-    --bt-secundary-hover: #D8DFE8;
+        /* 
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) {
+        } */
+
+        #img-logo {
+            height: 3rem;
+        }
+
+    }
+
+    div.card {
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .fields {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #text-field {
+        margin-top: 4rem;
+
+        p {
+            font-size: 2rem;
+            color: var(--text-color);
+        }
+    }
+
+    #secondary-text-field {
+        p {
+            font-size: 1.5rem;
+            color: var(--text-color-gray-400);
+        }
+    }
+
+    #alert-field {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        color: var(--text-color-gray-400);
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+    .buttons-field {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .btn {
+            width: 100%;
+            height: 67px;
+            border-radius: var(--btn-border-radius);
+        }
+
+        .primary-btn {
+            border: none;
+            background-color: var(--btn-primary);
+            color: var(--text-color-light);
+            transition: 0.5s;
+        }
+
+        .primary-btn:hover {
+            background-color: var(--btn-primary-hover);
+            transition: 0.5s;
+        }
+
+        .secondary-btn {
+            background-color: transparent;
+            border: 1px solid var(--btn-secondary-border);
+            color: var(--btn-secondary-border);
+            transition: 0.5s;
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--btn-secondary-hover);
+            transition: 0.5s;
+        }
+
+    }
+
+    #empty-text-alert {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+        }
+
+        b {
+            font-size: 1.5rem;
+            color: var(--text-color-gray-500);
+            user-select: none;
+        }
+
+        p {
+            color: var(--text-color-gray-400);
+            user-select: none;
+        }
+    }
+
+    #main-content {
+        /* 
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) { secondary-content
+        } */
+        flex: 5 1 0;
+    }
+
+    #secondary-content {
+        /* 
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) { secondary-content
+        } */
+        flex: 2 1 0;
+        background-color: var(--secondary-bg-color);
+        border-radius: var(--card-border-radius);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
 }
-  
