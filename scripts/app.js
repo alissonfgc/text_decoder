@@ -25,6 +25,7 @@ function encrypt() {
         const placeHolder = document.querySelector('#input-text');
         placeHolder.value = '';
         placeHolder.placeholder = 'Apenas letras minúsculas e sem acento.';
+        setTimeout(resetPlaceHolder, 2000);
     }
 }
 
@@ -40,6 +41,7 @@ function decrypt() {
         const placeHolder = document.querySelector('#input-text');
         placeHolder.value = '';
         placeHolder.placeholder = 'Apenas letras minúsculas e sem acento.';
+        setTimeout(resetPlaceHolder, 2000);
     }
 }
 
@@ -53,6 +55,11 @@ function showResult() {
     document.getElementById('empty-text-alert').style.display = 'none';
     document.getElementById('secondary-btn-div').style.display = 'flex';
     document.getElementById('secondary-text-field').style.display = 'flex';
+}
+
+function resetPlaceHolder() {
+    const placeHolder = document.querySelector('#input-text');
+    placeHolder.placeholder = 'Digite seu texto';
 }
 
 function copyText() {
