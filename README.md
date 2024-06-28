@@ -13,11 +13,13 @@ Desafio do curso ONE, parceria Alura e Oracle.
 
 ### Protótipo figma do projeto: [Visualizar](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802)
 
+### Deploy do projeto: [Visualizar](https://alissonfgc.com/Projects/SecondaryProjects/MessageDecoder/)
 
+##
 
 ## O desafio proposto
 
-Durante estas duas semanas, vamos trabalhar em uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
+Vamos trabalhar em uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
 
 As "chaves" de criptografia que utilizaremos são:
 A letra "e" é convertida para "enter"
@@ -45,15 +47,3 @@ O resultado deve ser exibido na tela.
 ### Extras:
 
 Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do ctrl+C ou da opção "copiar" do menu dos aplicativos.
-
-Temos um período de tempo de quatro semanas para desenvolver o projeto e vamos trabalhar com o sistema ágil de desenvolvimento, utilizando o Trello da seguinte forma:
-
-A coluna Pronto pra iniciar apresenta os cartões com os elementos ainda não desenvolvidos.
-
-Já na coluna Desenvolvendo ficarão os elementos que você estiver desenvolvendo no momento. Ao iniciar uma tarefa, você poderá mover o cartão que contém a tarefa para esta coluna.
-
-No Pausado estarão os elementos que você começou a desenvolver, mas precisou parar por algum motivo.
-
-Por fim, a coluna Concluído terá os elementos já concluídos.
-
-O Trello é uma ferramenta de uso individual para você controlar o andamento das suas atividades, mas ela não será avaliada.
